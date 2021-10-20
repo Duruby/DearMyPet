@@ -2,8 +2,18 @@ package com.example.demo.vo;
 
 
 public class Pet {
-	private String pet_name, pet_owner, pet_gender, pet_breed, pet_birth;
-
+	private String  pet_name, pet_owner, pet_gender, pet_breed, pet_birth;
+	public Pet() {
+	}
+	
+	public Pet(String pet_name, String pet_owner, String pet_gender, String pet_breed, String pet_birth) {
+		super();
+		this.pet_name = pet_name;
+		this.pet_owner = pet_owner;
+		this.pet_gender = pet_gender;
+		this.pet_breed = pet_breed;
+		this.pet_birth = pet_birth;
+	}
 	public String getPet_name() {
 		return pet_name;
 	}
@@ -23,7 +33,7 @@ public class Pet {
 	public String getPet_birth() {
 		return pet_birth;
 	}
-
+	
 	public void setPet_name(String pet_name) {
 		this.pet_name = pet_name;
 	}

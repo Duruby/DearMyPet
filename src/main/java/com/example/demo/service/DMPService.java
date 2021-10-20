@@ -72,7 +72,7 @@ public class DMPService {
 			Network network = gateway.getNetwork("mychannel");
 			Contract contract = network.getContract("dmp");
 
-			contract.submitTransaction("createPet", pet.getPet_name(), pet.getPet_owner(), pet.getPet_gender(),
+			contract.submitTransaction("createPet", "PET11",pet.getPet_name(), pet.getPet_owner(), pet.getPet_gender(),
 					pet.getPet_breed(), pet.getPet_birth());
 			return "Ok";
 		}

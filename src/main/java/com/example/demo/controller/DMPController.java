@@ -55,7 +55,7 @@ public class DMPController {
 	public String createPet(@ModelAttribute Pet pet) {
 		// HttpServletRequest로 불러와서 request.getParameter 5번하는게 더 빠름
 		System.out.println("createPet");
-		System.out.println(pet);
+		System.out.println(pet.getPet_name());
 		try {
 
 			return dmpService.createPet(pet);

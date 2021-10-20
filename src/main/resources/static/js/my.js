@@ -34,11 +34,11 @@ $(document).ready(function() {
 		);
 	});
 	$('#createSubmit').click(function() {
-		const pet_id = $('#pet_id').val();
+		const pet_name = $('#pet_name').val();
 		const pet_owner = $('#pet_owner').val();
-		const pet_make = $('#pet_make').val();
-		const pet_model = $('#pet_model').val();
-		const pet_color = $('#pet_color').val();
+		const pet_gender = $('#pet_gender').val();
+		const pet_breed = $('#pet_breed').val();
+		const pet_birth = $('#pet_birth').val();
 		$.post('../createPet',
 			{pet_name, pet_owner, pet_gender, pet_breed, pet_birth},
 			function(data) {
