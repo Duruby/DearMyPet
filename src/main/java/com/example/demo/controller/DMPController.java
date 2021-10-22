@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.service.DMPService;
 import com.example.demo.vo.Pet;
 
+
 @RestController
 public class DMPController {
 
@@ -56,6 +57,7 @@ public class DMPController {
 		// HttpServletRequest로 불러와서 request.getParameter 5번하는게 더 빠름
 		System.out.println("createPet");
 		System.out.println(pet.getPet_name());
+	
 		try {
 
 			return dmpService.createPet(pet);
