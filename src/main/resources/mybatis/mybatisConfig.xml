@@ -18,6 +18,7 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias alias="employee" type="com.fn.block.dto.EmployeeDTO" />
+		<typeAlias alias="Pet" type="com.example.demo.vo.Pet" />
+		
 	</typeAliases>
 </configuration>

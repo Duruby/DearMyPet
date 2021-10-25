@@ -60,5 +60,16 @@ $(document).ready(function() {
 			}
 		);
 	});
+	
+	/*function drawMenuList(mMenu) {
+	    var menu = mMenu;
+	    var menuHtml = "";
+	    for (var i = 0; i < menu.length; i++) {
+	    	menuHtml+=
+	    		"<ul>"+menu[i].foodName +" "+menu[i].foodPrice +'</ul>';
+	    }
+	    document.getElementById("menuList").innerHTML = menuHtml;
+	  }*/
+	
 
 });
