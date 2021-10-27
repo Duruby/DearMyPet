@@ -4,14 +4,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.demo.DAO.DMPDao">
+
 	<select id="lastPetIndex" resultType="String">
 		SELECT pet_index FROM dmp.pet
 		ORDER BY pet_index DESC
 		LIMIT 1;
 	</select>
+	
 	<insert id="createPet" parameterType="String">
 		INSERT INTO dmp.pet (owner_index) VALUES (#{owner});
 	</insert>
+	
 	<select id="petList" parameterType="String">
 		SELECT pet_index FROM dmp.pet WHERE owner_index = #{owner};
 	</select>
