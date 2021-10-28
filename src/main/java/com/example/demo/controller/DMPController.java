@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DMPController {
     KakaoAPI kakaoApi = new KakaoAPI();
 
+    @RequestMapping("/test")
+    public void test() {
+    	System.out.println("test");
+    }
+    
     @RequestMapping("/login")
     public ModelAndView login(@RequestParam("code") String code, HttpSession session) {
         ModelAndView mav = new ModelAndView();
@@ -43,6 +48,7 @@ public class DMPController {
         session.removeAttribute("accessToken");
         session.removeAttribute("userId");
         mav.setViewName("index");
+       
         return mav;
     }
     @RequestMapping(value="/kakaounlink")

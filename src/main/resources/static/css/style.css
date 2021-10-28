@@ -53,7 +53,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -492,6 +492,8 @@ pre {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px; }
+  
+
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -6595,9 +6597,10 @@ button.bg-dark:focus {
 .py-3 {
   padding-bottom: 1rem !important; }
 
+
 .pl-3,
 .px-3 {
-  padding-left: 1rem !important; }
+ padding-left: 1rem !important; }
 
 .p-4 {
   padding: 1.5rem !important; }
@@ -6616,7 +6619,7 @@ button.bg-dark:focus {
 
 .pl-4,
 .px-4 {
-  padding-left: 1.5rem !important; }
+  padding-left: 1.0rem !important; }
 
 .p-5 {
   padding: 3rem !important; }
@@ -7767,6 +7770,10 @@ button.bg-dark:focus {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+.text {
+	font-size:12px
+}
+
 .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -7998,7 +8005,7 @@ body {
   font-family: "Montserrat", Arial, sans-serif;
   background: #fff;
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.0;
   font-weight: 400;
   color: gray; }
   body.menu-show {
@@ -8416,7 +8423,13 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     background: #00bd56;
     border: 1px solid #00bd56;
-    color: #fff; }
+    color: #ffffff; }
+    
+  .btn.btn-primary2 {
+    background: #0080c0;
+    border: 1px solid #0080ff;
+    color: #ffffff; }
+    
     .btn.btn-primary:hover {
       border: 1px solid #00bd56;
       background: transparent;
@@ -8762,10 +8775,11 @@ h1, h2, h3, h4, h5,
     display: inline-block; }
 
 #section-counter {
+
   position: relative;
   z-index: 0; }
 
-.ftco-counter {
+.ftco-counter {	
   overflow-x: hidden;
   position: relative;
   padding: 4em 0;
@@ -8778,6 +8792,7 @@ h1, h2, h3, h4, h5,
     width: 100%; }
     @media (max-width: 991.98px) {
       .ftco-counter .block-18 {
+        
         margin-bottom: 2em; } }
   .ftco-counter .text {
     position: relative; }
@@ -8785,6 +8800,7 @@ h1, h2, h3, h4, h5,
       .ftco-counter .text {
         width: 100%; } }
     .ftco-counter .text .number {
+    
       line-height: 1;
       font-weight: 700;
       font-size: 50px;
@@ -8811,6 +8827,10 @@ h1, h2, h3, h4, h5,
 
 textarea.form-control {
   height: inherit !important; }
+
+.Neu {
+	 color: #000000 
+}
 
 .ftco-vh-100 {
   height: 100vh; }
